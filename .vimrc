@@ -1,4 +1,5 @@
 " ==================== 代码缩进相关设置 ====================
+set encoding=utf-8
 set nu
 " 自适应不同语言的智能缩进
 filetype indent on
