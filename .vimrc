@@ -1,5 +1,8 @@
-" ==================== 代码缩进相关设置 ====================
+" ==================== 编码和缩进相关设置 ====================
 set encoding=utf-8
+set termencoding=utf-8
+set fileencodings=utf-8,gbk,latin1
+
 set nu
 " 自适应不同语言的智能缩进
 filetype indent on
@@ -80,7 +83,7 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
-" ==================== 常用插件的相关设置 ====================
+" ==================== 常用快捷键的相关设置 ====================
 set tags=tags;
 noremap <Leader>tn :tnext<CR>
 noremap <Leader>tp :tprevious<CR>
@@ -88,6 +91,7 @@ noremap <Leader>csc :cscope -Rbq<CR>
 noremap <Leader>csa :cs add  cscope.out<CR>
 noremap <leader>ctag :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .
 noremap <leader>bear :!make clean; bear make
+noremap <leader>cv :!make clean; bear make
 
 " ==================== 常用插件的相关设置 ====================
 source ~/.vim/plugins-config/ycm.vim
